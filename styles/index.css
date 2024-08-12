@@ -1,0 +1,62 @@
+@import url(text.css);
+@import url(header.css);
+@import url(post.css);
+@import url(footer.css);
+@import url(hide-menu.css);
+
+:root {
+    --bg-color: white;
+    --text-color: #1a1a1a;
+    --text-color-gray: #667085;
+    --arrow-black: url(../img/arrow-black.svg);
+    --menu-button: url(../img/menu-button-black.svg);
+    --hidden-menu-cross: url(../img/cross-black.svg);
+    --button-theme-img: url(../img/sun.svg);
+}
+
+.dark-theme {
+    --bg-color: #090d1f;
+    --text-color: white;
+    --text-color-gray: white;
+    --arrow-black: url(../img/arrow-white.svg);
+    --menu-button: url(../img/menu-button-white.svg);
+    --hidden-menu-cross: url(../img/cross-white.svg);
+    --button-theme-img: url(../img/moon.svg);
+}
+
+/* html {
+    display: flex;
+    justify-content: center;
+} */
+
+body {
+    margin: 0;
+
+    max-width: 1600px;
+
+    background: var(--bg-color);
+    color: var(--text-color);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.windowImg__selected{
+    width: 100%;
+    height: 100%;
+
+    z-index: 2;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+.windowImg__selected img{
+    width: auto;
+    height: 70%;
+
+    max-width: 70%;
+}

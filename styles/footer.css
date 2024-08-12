@@ -1,0 +1,15 @@
+.footer {
+    /* margin-left: 150px; */
+
+    padding: 30px 150px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
